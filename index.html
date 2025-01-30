@@ -3,17 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Links  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
+
+    <!--  JavaScrip main  -->
+    <script defer src="js/javascript.js"></script>
+
     <title>Pokédex</title>
 </head>
-<body>
+<body> <!-- principal -->
 
-    <main>
+    <main> <!-- subdiv para inserir elementos como a imagen da pokedex -->
+        <img src="#" alt="pokemon" class="imagemPokemon"> <!-- imagem do pokemon -->
 
-        <img src="images/pokedex.png" alt="pokedex" class="pokedex">
-    
+        <h1 class="pokemonData">
+            <span class="pokemonNumber"></span> - 
+            <span class="pokemonName"></span>
+        </h1> <!-- texto onde informa númeração e nome do pokemon -->
+
+        <form>
+            <input
+            type="search"
+            class="inputSearch"
+            placeholder="Nome ou número"
+            required
+            >
+        </form> <!-- caixa de pesquisa onde sera buscado na api o nome, numero e imagem do pokemon -->
+
+        <div class="buttons">
+            <button class="button btnAnt">< Anterior</button>
+            <button class="button btnProx">Próximo ></button>
+        </div> <!-- botoes da pokedex -->
+
+        <img src="images/pokedex.png" alt="pokedex" class="pokedex"> <!--- imagem da pokedex -->
     </main>
-
+    
 </body>
 </html>
